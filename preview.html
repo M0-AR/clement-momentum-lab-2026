@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Momentum Lab — Trade Better, Not Less</title>
+<style>
+:root{--bg:#0b1220;--card:#111c33;--accent:#22c55e;--accent2:#3b82f6;--text:#e5e7eb;--muted:#9ca3af}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1220,#0f1a33);color:var(--text);line-height:1.6}
+.hero{max-width:1100px;margin:0 auto;padding:48px 20px 10px;text-align:center}
+.badge{display:inline-block;background:#13233f;border:1px solid #25406e;color:#bfdbfe;padding:6px 12px;border-radius:999px;font-size:13px;margin:4px}
+h1{font-size:44px;margin:14px 0 6px;letter-spacing:-1px}h1 span{color:var(--accent)}
+.sub{color:var(--muted);max-width:820px;margin:0 auto;font-size:18px}
+.grid{max-width:1100px;margin:20px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;padding:0 20px}
+.card{background:var(--card);border:1px solid #1f3357;border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px}.kpi{font-size:30px;font-weight:800}.small{color:var(--muted);font-size:13px}
+.section{max-width:1100px;margin:26px auto;padding:0 20px}.section h2{border-left:5px solid var(--accent);padding-left:10px}
+img,video{max-width:100%;border-radius:12px;border:1px solid #243a5e;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:800px){.two{grid-template-columns:1fr}h1{font-size:32px}}
+table{width:100%;border-collapse:collapse;font-size:13px;background:#0f1c36;border-radius:12px;overflow:hidden}th,td{padding:8px 10px;border-bottom:1px solid #1e3358;text-align:left}th{background:#16294d}
+code{background:#0a1428;padding:2px 6px;border-radius:6px;border:1px solid #23406f}.cta{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}.btn{background:var(--accent);color:#052e16;padding:12px 18px;border-radius:10px;font-weight:800;text-decoration:none}.btn2{background:#1e293b;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;border:1px solid #334155}
+.donkey{background:#052e16;border:1px solid #16a34a;border-radius:14px;padding:16px;margin:14px 0}
+footer{color:var(--muted);text-align:center;padding:30px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="hero">
+<div><span class="badge">MIT open source</span><span class="badge">Docker reproducible</span><span class="badge">Live data 2020–2026</span><span class="badge">Tests 3/3 pass</span></div>
+<h1>Trade <span>Better</span>, Not Less</h1>
+<p class="sub"><b>CEO summary in 30 seconds:</b> This repo turns a championship podium trading method into plain-English rules, tests it on 6+ years of real public market data, and shows exactly when it works, when it rests, and how risk is kept tiny. Beginners get pictures and stories. Professionals get code, numbers, and Docker to rerun everything in 3 commands. <b>Reading this page makes you dangerous enough to avoid the 5 mistakes that kill most traders.</b></p>
+<div class="cta"><a class="btn" href="#quickstart">Run it in 3 commands</a><a class="btn2" href="#demo">Watch 20-sec demo</a></div>
+<p class="small">If you only remember one line: <b>preserve first → small steady wins → big swings only with cushion, trend, and strong stocks.</b></p>
+</div>
+
+<div class="grid">
+<div class="card"><h3>🟢 What it proves</h3><div class="kpi">maxDD &lt; 2.5%</div><div class="small">Every name 2020–2026 at 0.3% risk. Small risk = survive first. Verified in results/summary.md</div></div>
+<div class="card"><h3>🎯 Selectivity lesson</h3><div class="kpi">31.6% filtered</div><div class="small">272 of 860 signals blocked in RISK-OFF. Resting is a position.</div></div>
+<div class="card"><h3>💥 Breakout edge</h3><div class="kpi">+8.18% vs +2.58%</div><div class="small">Breakout next-20-day mean 3× pullback. Hit 58.9% vs 53.3%.</div></div>
+<div class="card"><h3>👑 Concentration</h3><div class="kpi">Top-3 = 106%</div><div class="small">HOOD +4.23%, SNDK +3.91%, SPOT +3.15% carry the book. 7 winners pay for all.</div></div>
+</div>
+
+<div class="section" id="demo">
+<h2>🎬 Demo (20 seconds — watch before you read)</h2>
+<p>GIF autoplays on GitHub. MP4 has controls here. Both generated from live QQQ data — not drawings.</p>
+<img src="assets/demo.gif" alt="Animated QQQ regime demo">
+<p><video controls muted loop playsinline width="100%" poster="assets/regime_chart.png"><source src="assets/demo.mp4" type="video/mp4">Your browser cannot play video. See assets/demo.gif</video></p>
+<p class="small">How to replay: <code>docker compose run --rm lab python scripts/generate_assets.py</code> → refreshes GIF+MP4 from live cache.</p>
+</div>
+
+<div class="section">
+<h2>🍌 Donkey-proof story (read this if nothing else)</h2>
+<div class="donkey">
+<b>Imagine a donkey carrying gold up a hill.</b> 1) <b>Weather first:</b> if storm (market down), donkey rests in barn — no gold lost. That is the <b>regime filter</b> (QQQ trend). 2) <b>Pick strong donkeys:</b> only fast, healthy ones (liquid, jumpy +3%/day, rising 50/200-day). 3) <b>Wait for crouch-then-jump:</b> price squeezes quiet (low volume) then jumps (breakout) — you ride. Or small dip to the path (pullback) — you hop on cheap. 4) <b>Tiny backpacks:</b> risk 30 cents per $100. Even 10 losses = $3. You never die. 5) <b>Take some gold early:</b> sell 1/3 when happy (+2.5× wiggle), let rest run, quit if path breaks. 6) <b>Monthly rule:</b> if down 5% this month, carry feathers until you see a perfect hill. That is the whole repo. Everything else is details.
+</div>
+</div>
+
+<div class="section">
+<h2>📸 Proof in pictures (all from live runs)</h2>
+<div class="two">
+<div><h3>QQQ regime — trade only with wind</h3><img src="assets/regime_chart.png" alt="QQQ regime chart"></div>
+<div><h3>Per-symbol return at tiny risk</h3><img src="assets/returns_bar.png" alt="Returns bar"></div>
+</div>
+<div class="two">
+<div><h3>Breakout vs pullback</h3><img src="assets/hidden_H1.png" alt="Hidden H1"></div>
+<div><h3>Low win can still win</h3><img src="assets/winrate_pf.png" alt="Winrate vs PF"></div>
+</div>
+<div><h3>Signals guarded by RS+extension</h3><img src="assets/signals_bar.png" alt="Signals bar"></div>
+</div>
+
+<div class="section" id="quickstart">
+<h2>🚀 Quickstart — 3 commands to glory</h2>
+<p><code>docker compose build</code> → <code>docker compose run --rm lab python scripts/fetch_live.py</code> → <code>docker compose run --rm lab python scripts/run_all.py --period 2020-01-01:2026-10-01 --run-all</code></p>
+<p>Local without Docker: <code>PYTHONPATH=src python3 scripts/run_all.py --period 2020-01-01:2026-10-01 --run-all</code> · Tests: <code>PYTHONPATH=src python3 -m pytest tests/ -v</code></p>
+</div>
+
+<div class="section">
+<h2>✨ Features — everything this repo does</h2>
+<table><tr><th>Feature</th><th>What you get</th><th>Who loves it</th></tr>
+<tr><td>Plain-English rules</td><td>Stage-2, wedge-pop, launch-pad, breakout/pullback, 4-ATR veto, monthly floor</td><td>Beginners, teachers</td></tr>
+<tr><td>Live verifier</td><td>14 leaders + QQQ/SPY 2020–2026, costs 5bps, no look-ahead</td><td>Quants, skeptics</td></tr>
+<tr><td>Regime gate</td><td>RISK-ON 42.36% / OFF 28.97% / CHOPPY 27.55%</td><td>Risk managers</td></tr>
+<tr><td>Dynamic risk</td><td>0.2/0.3/0.5/1.0% + 25% cap + 3/day + 1%/day</td><td>Prop traders</td></tr>
+<tr><td>Ablations</td><td>no-regime / no-RS / no-extension side-by-side</td><td>Researchers</td></tr>
+<tr><td>Hidden patterns H1–H5</td><td>Breakout 3×, launch lift, extension paradox, concentration 106%</td><td>PhD students</td></tr>
+<tr><td>Walk-forward</td><td>2020–22 train vs 2023–26 frozen test</td><td>Reviewers</td></tr>
+<tr><td>Visuals + video</td><td>5 PNGs + GIF + MP4, all regenerated</td><td>Everyone</td></tr>
+<tr><td>Docker + Makefile</td><td>One-command repro, notebook profile :8888</td><td>OSS users</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>👥 User stories — pick yours</h2>
+<div class="grid">
+<div class="card"><h3>🎓 Total beginner</h3>Read donkey story → look at GIF → run 3 commands → learn why resting beats revenge-trading.</div>
+<div class="card"><h3>📈 Weekend trader</h3>Copy regime + RS checklist for Sunday homework; promote watch→almost-ready→execution lists.</div>
+<div class="card"><h3>🧪 Quant student</h3>Fork sizing.py/backtest.py, test your threshold, add short engine for thesis (roadmap in README).</div>
+<div class="card"><h3>🏫 Teacher</h3>Show preview.html in class; donkey analogy + charts = full lesson, no jargon.</div>
+<div class="card"><h3>💼 Fund analyst</h3>Use monthly-floor + cushion logic to explain drawdown control to LPs.</div>
+<div class="card"><h3>🌍 OSS contributor</h3>Add group-strength filter or intraday entry; open PR with regenerated results/.</div>
+</div>
+</div>
+
+<div class="section">
+<h2>📊 Verified numbers (copy of results/summary.md)</h2>
+<table><tr><th>Symbol</th><th>Trades</th><th>Win</th><th>PF</th><th>Sharpe</th><th>MDD</th><th>Total</th></tr>
+<tr><td>HOOD</td><td>24</td><td>54.17%</td><td>3.74</td><td>0.76</td><td>-0.70%</td><td>+4.23%</td></tr>
+<tr><td>SNDK</td><td>6</td><td>66.67%</td><td>38.48</td><td>0.88</td><td>-0.05%</td><td>+3.91%</td></tr>
+<tr><td>SPOT</td><td>17</td><td>76.47%</td><td>8.85</td><td>0.86</td><td>-0.31%</td><td>+3.15%</td></tr>
+<tr><td>AMD</td><td>26</td><td>46.15%</td><td>1.49</td><td>0.26</td><td>-1.00%</td><td>+1.41%</td></tr>
+<tr><td>MU</td><td>21</td><td>38.10%</td><td>1.36</td><td>0.14</td><td>-2.00%</td><td>+0.82%</td></tr>
+<tr><td>TQQQ</td><td>49</td><td>46.94%</td><td>1.27</td><td>0.16</td><td>-1.62%</td><td>+0.73%</td></tr>
+<tr><td>NFLX</td><td>4</td><td>75.00%</td><td>12.69</td><td>0.46</td><td>-0.04%</td><td>+0.41%</td></tr>
+<tr><td>PLTR</td><td>27</td><td>33.33%</td><td>0.77</td><td>-0.17</td><td>-1.43%</td><td>-0.74%</td></tr>
+<tr><td>NVDA</td><td>33</td><td>36.36%</td><td>0.79</td><td>-0.18</td><td>-0.62%</td><td>-0.51%</td></tr>
+<tr><td>AVGO</td><td>19</td><td>21.05%</td><td>0.22</td><td>-0.84</td><td>-2.03%</td><td>-2.03%</td></tr>
+</table>
+<p class="small">Full 14-name table in README + results/summary.md. Sizing NVDA: fixed-1% -1.19%/mdd-2.28% vs dynamic -0.51%/-0.62% vs tiny -0.14%/-0.23%.</p>
+</div>
+
+<div class="section">
+<h2>❓ FAQ — dumb questions welcome</h2>
+<p><b>Do I need money to use this?</b> No. Paper-trade with cache. <b>Is this financial advice?</b> No — education only. <b>Why are returns small?</b> 0.3% risk is a seatbelt; champions add concentration + margin + shorts (explained as next steps). <b>What if market crashes?</b> Regime turns red, system rests — that is the feature. <b>Can a kid run it?</b> Yes: 3 Docker commands.</p>
+</div>
+<footer>MIT · Educational only, not financial advice · Data via public Yahoo Finance · Rerun, don’t copy — <code>scripts/run_all.py</code> is truth.</footer>
+</body>
+</html>
