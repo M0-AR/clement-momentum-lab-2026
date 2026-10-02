@@ -1,0 +1,25 @@
+services:
+  lab:
+    build: .
+    container_name: clement-momentum-lab
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - PYTHONPATH=/app/src
+      - TZ=Asia/Hong_Kong
+    command: python scripts/run_all.py --period 2020-01-01:2026-10-01 --run-all
+    mem_limit: 4g
+
+  notebook:
+    build: .
+    container_name: clement-momentum-notebook
+    volumes:
+      - ./:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONPATH=/app/src
+    command: pip install jupyter && jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+    profiles: ["notebook"]

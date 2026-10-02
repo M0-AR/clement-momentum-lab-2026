@@ -1,0 +1,486 @@
+{
+  "H1_breakout_vs_pullback": [
+    {
+      "name": "breakout",
+      "n": 149,
+      "mean_fwd20": 0.08182652155788106,
+      "median_fwd20": 0.048944359419162975,
+      "hit_rate_fwd20_pos": 0.5894039735099338
+    },
+    {
+      "name": "pullback",
+      "n": 695,
+      "mean_fwd20": 0.025758594455680506,
+      "median_fwd20": 0.01407850528365362,
+      "hit_rate_fwd20_pos": 0.5331452750352609
+    }
+  ],
+  "H2_launchpad": [
+    {
+      "name": "launch_pad_true",
+      "n": 5713,
+      "mean_fwd20": 0.04784913431137615,
+      "median_fwd20": 0.035264670636132145,
+      "hit_rate_fwd20_pos": 0.6026994289669493
+    },
+    {
+      "name": "launch_pad_false",
+      "n": 14614,
+      "mean_fwd20": 0.04159141746421836,
+      "median_fwd20": 0.0246722644316012,
+      "hit_rate_fwd20_pos": 0.5571891016994874
+    }
+  ],
+  "H3_regime_fwd": [
+    {
+      "name": "RISK-ON",
+      "n": 8522,
+      "mean_fwd20": 0.036526447794457795,
+      "median_fwd20": 0.02270044761888168,
+      "hit_rate_fwd20_pos": 0.5538568450312717
+    },
+    {
+      "name": "CHOPPY",
+      "n": 5660,
+      "mean_fwd20": 0.04730002440133847,
+      "median_fwd20": 0.02983599557577199,
+      "hit_rate_fwd20_pos": 0.5718999652657173
+    },
+    {
+      "name": "RISK-OFF",
+      "n": 5974,
+      "mean_fwd20": 0.04940721137019807,
+      "median_fwd20": 0.03585913675038144,
+      "hit_rate_fwd20_pos": 0.5891793514228988
+    }
+  ],
+  "H4_extension": [
+    {
+      "name": "extended_vetoed",
+      "n": 2627,
+      "mean_fwd20": 0.06298333155558233,
+      "median_fwd20": 0.049829619805849656,
+      "hit_rate_fwd20_pos": 0.6628744785741373
+    },
+    {
+      "name": "not_extended",
+      "n": 17700,
+      "mean_fwd20": 0.0404362636805912,
+      "median_fwd20": 0.024440020207822877,
+      "hit_rate_fwd20_pos": 0.556316082359488
+    }
+  ],
+  "H5_concentration_rank": [
+    {
+      "symbol": "HOOD",
+      "total_return": 0.042305552724678064
+    },
+    {
+      "symbol": "SNDK",
+      "total_return": 0.039129515119987524
+    },
+    {
+      "symbol": "SPOT",
+      "total_return": 0.03148101594594821
+    },
+    {
+      "symbol": "AMD",
+      "total_return": 0.014097895322073173
+    },
+    {
+      "symbol": "MU",
+      "total_return": 0.008168487151890114
+    },
+    {
+      "symbol": "TQQQ",
+      "total_return": 0.007349010188477445
+    },
+    {
+      "symbol": "NFLX",
+      "total_return": 0.004142255521568217
+    },
+    {
+      "symbol": "COIN",
+      "total_return": -0.0004422550844217499
+    },
+    {
+      "symbol": "ARM",
+      "total_return": -0.0017560986707337856
+    },
+    {
+      "symbol": "UCTT",
+      "total_return": -0.0024945016901365413
+    },
+    {
+      "symbol": "CRWD",
+      "total_return": -0.0031115641799470684
+    },
+    {
+      "symbol": "NVDA",
+      "total_return": -0.005071380443974038
+    },
+    {
+      "symbol": "PLTR",
+      "total_return": -0.007382787769901311
+    },
+    {
+      "symbol": "AVGO",
+      "total_return": -0.02032210720322747
+    }
+  ],
+  "H5_top3_share": 1.0643119195719524,
+  "H6_sizing_NVDA": {
+    "fixed_1pct": {
+      "total_return": -0.01189607487819655,
+      "annual_return": -0.0017731287973932197,
+      "volatility": 0.014565906190350668,
+      "sharpe": -0.11488563269107024,
+      "max_drawdown": -0.022847851154902527,
+      "calmar": -0.07760593262674309,
+      "profit_factor": 0.8623624002677732,
+      "win_rate": 0.36363636363636365,
+      "expectancy": -36.04871175211003,
+      "n_trades": 33
+    },
+    "dynamic_clement": {
+      "total_return": -0.005071380443974038,
+      "annual_return": -0.0007536884535309651,
+      "volatility": 0.004096821702654254,
+      "sharpe": -0.18245995315508656,
+      "max_drawdown": -0.006188962832481048,
+      "calmar": -0.12177944413811005,
+      "profit_factor": 0.7912949077687021,
+      "win_rate": 0.36363636363636365,
+      "expectancy": -15.36781952719425,
+      "n_trades": 33
+    },
+    "tiny_0.1pct": {
+      "total_return": -0.0013680916548527433,
+      "annual_return": -0.0002029991263911013,
+      "volatility": 0.0014920148274609121,
+      "sharpe": -0.13567202447251533,
+      "max_drawdown": -0.00228546865918137,
+      "calmar": -0.08882166271482075,
+      "profit_factor": 0.8471759106327302,
+      "win_rate": 0.36363636363636365,
+      "expectancy": -4.14573228743326,
+      "n_trades": 33
+    }
+  },
+  "H7_train_2020_2022": {
+    "PLTR": {
+      "total_return": -0.005654163021997394,
+      "annual_return": -0.0025194075368158986,
+      "volatility": 0.0028691854286489412,
+      "sharpe": -0.8753446625242893,
+      "max_drawdown": -0.006058643947430682,
+      "calmar": -0.415836870209928,
+      "profit_factor": 0.06748853708873404,
+      "win_rate": 0.25,
+      "expectancy": -141.35407554993594,
+      "n_trades": 4
+    },
+    "CRWD": {
+      "total_return": 0.007312178018826554,
+      "annual_return": 0.0024376008765940593,
+      "volatility": 0.008653221449046731,
+      "sharpe": 0.28495225477672387,
+      "max_drawdown": -0.014230125208717161,
+      "calmar": 0.17129862463197595,
+      "profit_factor": 1.4599337100016523,
+      "win_rate": 0.3076923076923077,
+      "expectancy": 56.247523221743194,
+      "n_trades": 13
+    },
+    "SPOT": {
+      "total_return": 0.003844262994822545,
+      "annual_return": 0.0012830044678764363,
+      "volatility": 0.0016057085021245496,
+      "sharpe": 0.7973135355786328,
+      "max_drawdown": 0.0,
+      "calmar": 0.0,
+      "profit_factor": 99.0,
+      "win_rate": 1.0,
+      "expectancy": 192.21314974112795,
+      "n_trades": 2
+    },
+    "HOOD": {
+      "total_return": 0.0,
+      "annual_return": 0.0,
+      "volatility": 0.0,
+      "sharpe": 0.0,
+      "max_drawdown": 0.0,
+      "calmar": 0.0,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": 0.0,
+      "n_trades": 0
+    },
+    "NFLX": {
+      "total_return": 1.6762612287335443e-05,
+      "annual_return": 5.60156447515503e-06,
+      "volatility": 9.67789871641445e-06,
+      "sharpe": 0.5773502691896255,
+      "max_drawdown": 0.0,
+      "calmar": 0.0,
+      "profit_factor": 99.0,
+      "win_rate": 1.0,
+      "expectancy": 1.6762612287329441,
+      "n_trades": 1
+    },
+    "NVDA": {
+      "total_return": -0.005378171469336945,
+      "annual_return": -0.0018004618719134058,
+      "volatility": 0.003715756081017182,
+      "sharpe": -0.4819086316665258,
+      "max_drawdown": -0.0053781714693369575,
+      "calmar": -0.33477212137592444,
+      "profit_factor": 0.5242023058443265,
+      "win_rate": 0.38461538461538464,
+      "expectancy": -41.370549764132605,
+      "n_trades": 13
+    },
+    "AMD": {
+      "total_return": -0.0005194895088739271,
+      "annual_return": -0.00017362888183436453,
+      "volatility": 0.00498299935852355,
+      "sharpe": -0.032277882239615585,
+      "max_drawdown": -0.0065253794546204155,
+      "calmar": -0.02660824294461886,
+      "profit_factor": 0.9418306185661549,
+      "win_rate": 0.2857142857142857,
+      "expectancy": -7.421278698201546,
+      "n_trades": 7
+    },
+    "AVGO": {
+      "total_return": -0.0007010126486683976,
+      "annual_return": -0.00023431349328550954,
+      "volatility": 0.0003133261450999074,
+      "sharpe": -0.7458799164500034,
+      "max_drawdown": -0.0007010126486684021,
+      "calmar": -0.3342500220653596,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": -35.05063243341983,
+      "n_trades": 2
+    },
+    "MU": {
+      "total_return": -0.004911903253032035,
+      "annual_return": -0.001644112015491972,
+      "volatility": 0.0025383109661467045,
+      "sharpe": -0.6453517797024745,
+      "max_drawdown": -0.004911903253032069,
+      "calmar": -0.3347199508616295,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": -163.7301084343986,
+      "n_trades": 3
+    },
+    "UCTT": {
+      "total_return": 0.0,
+      "annual_return": 0.0,
+      "volatility": 0.0,
+      "sharpe": 0.0,
+      "max_drawdown": 0.0,
+      "calmar": 0.0,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": 0.0,
+      "n_trades": 0
+    },
+    "COIN": {
+      "total_return": 0.0,
+      "annual_return": 0.0,
+      "volatility": 0.0,
+      "sharpe": 0.0,
+      "max_drawdown": 0.0,
+      "calmar": 0.0,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": 0.0,
+      "n_trades": 0
+    },
+    "TQQQ": {
+      "total_return": 0.006887262398473926,
+      "annual_return": 0.002296273263983517,
+      "volatility": 0.003385307720048687,
+      "sharpe": 0.6775198905944353,
+      "max_drawdown": -0.003033824193175088,
+      "calmar": 0.7568906824427168,
+      "profit_factor": 2.44470932968539,
+      "win_rate": 0.5882352941176471,
+      "expectancy": 40.51330822631797,
+      "n_trades": 17
+    }
+  },
+  "H7_test_2023_2026": {
+    "PLTR": {
+      "total_return": 0.0014610711339764215,
+      "annual_return": 0.0003904618298180562,
+      "volatility": 0.008371168476443192,
+      "sharpe": 0.05096425988047109,
+      "max_drawdown": -0.014298960080092928,
+      "calmar": 0.027307008875537657,
+      "profit_factor": 1.0643492293731365,
+      "win_rate": 0.38095238095238093,
+      "expectancy": 6.957481590363464,
+      "n_trades": 21
+    },
+    "CRWD": {
+      "total_return": -0.01051756431930817,
+      "annual_return": -0.002823155964362334,
+      "volatility": 0.004130366088197984,
+      "sharpe": -0.6849289690286792,
+      "max_drawdown": -0.01420960267018936,
+      "calmar": -0.19867944444956895,
+      "profit_factor": 0.42244329201014924,
+      "win_rate": 0.4090909090909091,
+      "expectancy": -47.807110542310625,
+      "n_trades": 22
+    },
+    "SPOT": {
+      "total_return": 0.024126250300176233,
+      "annual_return": 0.006394804166788948,
+      "volatility": 0.006618411663701832,
+      "sharpe": 0.9699832949770497,
+      "max_drawdown": -0.0005611138365330509,
+      "calmar": 11.396625337739787,
+      "profit_factor": 26.880067704075095,
+      "win_rate": 0.7,
+      "expectancy": 241.26250300176417,
+      "n_trades": 10
+    },
+    "HOOD": {
+      "total_return": 0.04591594733554749,
+      "annual_return": 0.012076119701775578,
+      "volatility": 0.012408782855863202,
+      "sharpe": 0.977097493570846,
+      "max_drawdown": -0.006046798377762127,
+      "calmar": 1.9971097012572885,
+      "profit_factor": 4.825526429514517,
+      "win_rate": 0.5909090909090909,
+      "expectancy": 208.7088515252173,
+      "n_trades": 22
+    },
+    "NFLX": {
+      "total_return": -0.00035263108180039193,
+      "annual_return": -9.430098321094871e-05,
+      "volatility": 0.00018267876366734277,
+      "sharpe": -0.5180449855261163,
+      "max_drawdown": -0.00035263108180035485,
+      "calmar": -0.2674210756734655,
+      "profit_factor": 0.0,
+      "win_rate": 0.0,
+      "expectancy": -35.26310818003575,
+      "n_trades": 1
+    },
+    "NVDA": {
+      "total_return": -0.0052049708266268535,
+      "annual_return": -0.00139440060510021,
+      "volatility": 0.0034332785357448882,
+      "sharpe": -0.406204806106287,
+      "max_drawdown": -0.005639096130309185,
+      "calmar": -0.2472737780804167,
+      "profit_factor": 0.5461806984261982,
+      "win_rate": 0.3333333333333333,
+      "expectancy": -43.374756888556114,
+      "n_trades": 12
+    },
+    "AMD": {
+      "total_return": -0.002155520168679259,
+      "annual_return": -0.0005768127065454154,
+      "volatility": 0.006406003853918795,
+      "sharpe": -0.08719875393721227,
+      "max_drawdown": -0.009990738930811921,
+      "calmar": -0.05773473919596649,
+      "profit_factor": 0.8880268341191843,
+      "win_rate": 0.47058823529411764,
+      "expectancy": -12.679530403995916,
+      "n_trades": 17
+    },
+    "AVGO": {
+      "total_return": -0.01963485883895988,
+      "annual_return": -0.005288291499499609,
+      "volatility": 0.00483779040881272,
+      "sharpe": -1.0976235646124957,
+      "max_drawdown": -0.019634858838959917,
+      "calmar": -0.26933178093475596,
+      "profit_factor": 0.22156432734777623,
+      "win_rate": 0.23529411764705882,
+      "expectancy": -115.49916964094244,
+      "n_trades": 17
+    },
+    "ARM": {
+      "total_return": -0.0017560986707337856,
+      "annual_return": -0.0005771525324244076,
+      "volatility": 0.008096607731646704,
+      "sharpe": -0.06757255943008048,
+      "max_drawdown": -0.016052463646830873,
+      "calmar": -0.03595414044362909,
+      "profit_factor": 0.9240264359229782,
+      "win_rate": 0.45,
+      "expectancy": -8.780493353667984,
+      "n_trades": 20
+    },
+    "MU": {
+      "total_return": 0.018243525034360886,
+      "annual_return": 0.00484581327801803,
+      "volatility": 0.011460395566811107,
+      "sharpe": 0.429022891274225,
+      "max_drawdown": -0.012134795765326223,
+      "calmar": 0.3993320836815714,
+      "profit_factor": 2.409192863812742,
+      "win_rate": 0.5,
+      "expectancy": 114.02203146475524,
+      "n_trades": 16
+    },
+    "UCTT": {
+      "total_return": -0.0024945016901365413,
+      "annual_return": -0.0006676065001646192,
+      "volatility": 0.0016189437646236277,
+      "sharpe": -0.4132168521915744,
+      "max_drawdown": -0.003020686553962109,
+      "calmar": -0.22101151120395046,
+      "profit_factor": 0.2925672976141917,
+      "win_rate": 0.5,
+      "expectancy": -41.57502816894244,
+      "n_trades": 6
+    },
+    "COIN": {
+      "total_return": 6.080896308913175e-05,
+      "annual_return": 1.6259135470875208e-05,
+      "volatility": 0.009257342542134464,
+      "sharpe": 0.006350961055383728,
+      "max_drawdown": -0.02058663342404355,
+      "calmar": 0.0007897908869298576,
+      "profit_factor": 1.0027850988786515,
+      "win_rate": 0.25,
+      "expectancy": 0.3800560193060889,
+      "n_trades": 16
+    },
+    "SNDK": {
+      "total_return": 0.039129515119987524,
+      "annual_return": 0.023882616834448367,
+      "volatility": 0.027373657332422925,
+      "sharpe": 0.8773368446794518,
+      "max_drawdown": -0.0005030579599198968,
+      "calmar": 47.47488110167515,
+      "profit_factor": 38.47883565666758,
+      "win_rate": 0.6666666666666666,
+      "expectancy": 652.1585853331243,
+      "n_trades": 6
+    },
+    "TQQQ": {
+      "total_return": -0.013200383881474154,
+      "annual_return": -0.0035468031543808287,
+      "volatility": 0.0031013651131401934,
+      "sharpe": -1.1483160025106072,
+      "max_drawdown": -0.014437501720858125,
+      "calmar": -0.24566599006923037,
+      "profit_factor": 0.21153512904296512,
+      "win_rate": 0.36,
+      "expectancy": -52.801535525896696,
+      "n_trades": 25
+    }
+  }
+}

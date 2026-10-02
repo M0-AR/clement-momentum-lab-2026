@@ -1,0 +1,35 @@
+universe:
+  index: QQQ
+  benchmark: QQQ
+  leaders_2023_2025:
+    - PLTR
+    - CRWD
+    - SPOT
+    - HOOD
+    - NFLX
+    - NVDA
+    - AMD
+    - AVGO
+    - ARM
+    - MU
+    - UCTT
+    - COIN
+    - SNDK
+    - TQQQ
+  market: SPY
+period:
+  start: "2020-01-01"
+  end: "2026-10-01"
+filters:
+  adv_min: 50000000
+  adr_min: 3.0
+  max_dist_50_atr: 4.0
+risk:
+  normal_risk: 0.003
+  strong_risk: 0.005
+  conviction_risk: 0.01
+  starter_risk: 0.002
+  minuscule_risk: 0.0005
+  monthly_floor: -0.05
+costs:
+  bps_per_side: 0.0005
